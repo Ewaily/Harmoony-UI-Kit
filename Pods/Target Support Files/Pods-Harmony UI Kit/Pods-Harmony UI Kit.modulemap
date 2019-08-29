@@ -1,0 +1,6 @@
+framework module Pods_Harmony_UI_Kit {
+  umbrella header "Pods-Harmony UI Kit-umbrella.h"
+
+  export *
+  module * { export * }
+}
