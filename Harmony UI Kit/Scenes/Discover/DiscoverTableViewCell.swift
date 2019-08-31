@@ -7,10 +7,18 @@
 //
 
 import UIKit
-
+import FloatRatingView
 class DiscoverTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var ratingLabel: UILabel!
+    @IBOutlet weak var rating: FloatRatingView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        updateRatingLabel()
+    }
+    
+    func updateRatingLabel() {
+        ratingLabel.text = String(rating.rating) + " / 5.0"
     }
 }

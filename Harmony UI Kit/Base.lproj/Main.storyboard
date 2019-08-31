@@ -109,7 +109,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyz-d0-TlC">
                                                 <rect key="frame" x="20" y="343.5" width="334" height="30"/>
                                                 <state key="normal" title="Register">
-                                                    <color key="titleColor" red="0.0" green="0.792156862745098" blue="0.61568627450980395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" red="0.33405900001525879" green="0.6330878734588623" blue="0.49145537614822388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
                                                     <segue destination="MCk-2z-Yxj" kind="show" id="pLR-bP-Kcw"/>
@@ -234,7 +234,6 @@
         <!--Navigation Controller-->
         <scene sceneID="SFi-79-hft">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UUG-2v-FOd" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7EA-8u-g0i" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="Discover" id="sCR-ce-D7B"/>
                     <toolbarItems/>
@@ -247,6 +246,7 @@
                         <segue destination="fcg-5D-5rO" kind="relationship" relationship="rootViewController" id="aMq-eW-cUU"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UUG-2v-FOd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2086.9565217391305" y="107.8125"/>
         </scene>
@@ -256,17 +256,58 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="MCk-2z-Yxj" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2yx-uz-bkZ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <rect key="contentStretch" x="0.0" y="1" width="1" height="0.5"/>
                         <color key="selectedImageTintColor" red="0.60784313725490191" green="0.59999999999999998" blue="0.66274509803921566" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.42745098039215684" green="0.80000000000000004" blue="0.61960784313725492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
                         <segue destination="7EA-8u-g0i" kind="relationship" relationship="viewControllers" id="mYP-pz-6Xw"/>
+                        <segue destination="I2a-c1-nJS" kind="relationship" relationship="viewControllers" id="qMu-Vt-bQr"/>
+                        <segue destination="n12-B1-uUM" kind="relationship" relationship="viewControllers" id="ta8-Oq-AOf"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dIj-8Y-HgI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1176.8115942028987" y="107.8125"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7ZD-5A-BG3">
+            <objects>
+                <viewController id="I2a-c1-nJS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GRg-w9-uug">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="z6s-dR-CyF"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="Discover" id="wb4-cy-mvf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MNT-4f-QA3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1177" y="835"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Sfb-ut-iGt">
+            <objects>
+                <viewController id="n12-B1-uUM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XAP-Uc-bVw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ZVu-Ic-cum"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="Profile" id="8JH-mo-jWV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OeR-zk-7RC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2141" y="834"/>
         </scene>
     </scenes>
     <resources>
@@ -277,5 +318,6 @@
         <image name="Logo" width="36" height="36"/>
         <image name="Outline" width="17" height="15"/>
         <image name="Person" width="13" height="14"/>
+        <image name="Profile" width="21" height="22"/>
     </resources>
 </document>
