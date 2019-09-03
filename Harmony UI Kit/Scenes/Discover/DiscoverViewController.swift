@@ -23,7 +23,14 @@ class DiscoverViewController: UIViewController {
         discoverTableView.register(discoverXibFile, forCellReuseIdentifier: "discoverCell")
 
     }
-
+    
+    @IBAction func filterButton(_ sender: UIBarButtonItem) {
+        let filterSubview = FilterSubview()
+        self.view.addSubview(filterSubview)
+        self.view.bringSubviewToFront(filterSubview)
+        self.view.isUserInteractionEnabled = false
+        filterSubview.didMoveToSuperview()
+    }
 }
 
 extension DiscoverViewController: UITableViewDelegate {

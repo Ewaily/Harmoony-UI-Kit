@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10259980231E14340055FAB4 /* FilterSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1025997F231E14340055FAB4 /* FilterSubview.swift */; };
+		10259983231E14580055FAB4 /* FilterSubview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10259982231E14580055FAB4 /* FilterSubview.xib */; };
+		10259986231E16040055FAB4 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10259985231E16040055FAB4 /* R.generated.swift */; };
 		10D51FAA2319DF9C007ADBE4 /* DiscoverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D51FA82319DF9C007ADBE4 /* DiscoverTableViewCell.swift */; };
 		10D51FAB2319DF9C007ADBE4 /* DiscoverTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10D51FA92319DF9C007ADBE4 /* DiscoverTableViewCell.xib */; };
 		10DA18822318B8000049B5D4 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DA18812318B8000049B5D4 /* DiscoverViewController.swift */; };
@@ -21,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1025997F231E14340055FAB4 /* FilterSubview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSubview.swift; sourceTree = "<group>"; };
+		10259982231E14580055FAB4 /* FilterSubview.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterSubview.xib; sourceTree = "<group>"; };
+		10259985231E16040055FAB4 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		10D51FA82319DF9C007ADBE4 /* DiscoverTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewCell.swift; sourceTree = "<group>"; };
 		10D51FA92319DF9C007ADBE4 /* DiscoverTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscoverTableViewCell.xib; sourceTree = "<group>"; };
 		10DA18812318B8000049B5D4 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +56,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1025997E231E14080055FAB4 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				1025997F231E14340055FAB4 /* FilterSubview.swift */,
+				10259982231E14580055FAB4 /* FilterSubview.xib */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
 		10DA18802318B7B40049B5D4 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +98,7 @@
 			children = (
 				10F6E17A2318455D00C17CF4 /* Scenes */,
 				10F6E1682318412100C17CF4 /* AppDelegate.swift */,
+				10259985231E16040055FAB4 /* R.generated.swift */,
 				10F6E16C2318412100C17CF4 /* Main.storyboard */,
 				10F6E16F2318412100C17CF4 /* Assets.xcassets */,
 				10F6E1712318412100C17CF4 /* LaunchScreen.storyboard */,
@@ -94,6 +110,7 @@
 		10F6E17A2318455D00C17CF4 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				1025997E231E14080055FAB4 /* Filter */,
 				10DA18802318B7B40049B5D4 /* Discover */,
 				10F6E17B2318638500C17CF4 /* Login */,
 			);
@@ -135,6 +152,7 @@
 			buildConfigurationList = 10F6E1772318412100C17CF4 /* Build configuration list for PBXNativeTarget "Harmony UI Kit" */;
 			buildPhases = (
 				E813285D65751EA6CAA98360 /* [CP] Check Pods Manifest.lock */,
+				10259984231E15650055FAB4 /* R Run Script */,
 				10F6E1612318412100C17CF4 /* Sources */,
 				10F6E1622318412100C17CF4 /* Frameworks */,
 				10F6E1632318412100C17CF4 /* Resources */,
@@ -190,6 +208,7 @@
 				10D51FAB2319DF9C007ADBE4 /* DiscoverTableViewCell.xib in Resources */,
 				10F6E1732318412100C17CF4 /* LaunchScreen.storyboard in Resources */,
 				10F6E1702318412100C17CF4 /* Assets.xcassets in Resources */,
+				10259983231E14580055FAB4 /* FilterSubview.xib in Resources */,
 				10F6E16E2318412100C17CF4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,6 +216,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		10259984231E15650055FAB4 /* R Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = "R Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 		323E4D5331BB7A564B59E87A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -246,9 +285,11 @@
 				10F6E17D2318647600C17CF4 /* LoginPresenter.swift in Sources */,
 				10F6E16B2318412100C17CF4 /* LoginViewController.swift in Sources */,
 				10D51FAA2319DF9C007ADBE4 /* DiscoverTableViewCell.swift in Sources */,
+				10259986231E16040055FAB4 /* R.generated.swift in Sources */,
 				10F6E17F2318661D00C17CF4 /* LoginConfigurator.swift in Sources */,
 				10F6E1692318412100C17CF4 /* AppDelegate.swift in Sources */,
 				10DA18822318B8000049B5D4 /* DiscoverViewController.swift in Sources */,
+				10259980231E14340055FAB4 /* FilterSubview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

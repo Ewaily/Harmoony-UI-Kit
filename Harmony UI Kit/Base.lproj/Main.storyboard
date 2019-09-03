@@ -115,7 +115,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyz-d0-TlC">
                                                 <rect key="frame" x="20" y="611" width="334" height="30"/>
                                                 <state key="normal" title="Register">
-                                                    <color key="titleColor" red="0.33405900001525879" green="0.6330878734588623" blue="0.49145537614822388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" red="0.33333333333333331" green="0.63137254901960782" blue="0.49019607843137253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
                                                     <segue destination="MCk-2z-Yxj" kind="show" id="pLR-bP-Kcw"/>
@@ -218,6 +218,9 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="Filter" id="aK2-ET-OXa">
                             <color key="tintColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="filterButton:" destination="fcg-5D-5rO" id="yAY-QJ-niw"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>

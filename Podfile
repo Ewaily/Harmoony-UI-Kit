@@ -8,5 +8,5 @@ target 'Harmony UI Kit' do
   # Pods for Harmony UI Kit
     pod 'IQKeyboardManagerSwift'
     pod 'FloatRatingView', '~> 4'
-
+    pod 'R.swift'
 end
